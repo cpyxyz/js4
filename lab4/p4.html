@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>music academy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <style>
+        body {
+            width: 600px;
+            margin-left: 350px;
+            margin-top: 2px;
+            /* background-color: grey; */
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container container-fluid">
+        <div class="card card-primary">
+            <div class="card-heading">
+                <p></p>
+                <Strong>
+                    <center>MUSIC ACADEMY</center>
+                </Strong>
+                <hr>
+            </div>
+            <div class="card-body">
+                <form name="myform" class="form">
+
+                    <div class="form-group">
+                        <label for="Name">Name </label>
+                        <input id="name" name="name" class="form-control" type="text" pattern="[A-Za-z\s]+"
+                            maxlength="20" placeholder="Enter your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email </label><br>
+                        <input id="email" name="email" type="Email" class="form-control" maxlength="30"
+                            placeholder="Enter your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob" class="form-control"
+                            placeholder="Enter your Date of Birth" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" class="form-control" min="18" max="60"
+                            placeholder="Enter your age" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" class="form-control" required>
+                            <option selected>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Mobile No</label>
+                        <input type="text" id="mobile" name="mobile" class="form-control"
+                            placeholder="Enter Your Mobile number" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Pincode">Pincode</label>
+                        <input type="text" id="pincode" name="pincode" class="form-control"
+                            placeholder="Enter Your phone Pincode" minlength="6" maxlength="6" pattern="[0-9]+"
+                            required>
+                    </div>
+
+                    <label for="instruments">Select the instruments your interested in</label><br>
+                    <input type="checkbox" id="guitar" name="guitar" value="guitar">
+                    <label for="guitar"> Guitar</label><br>
+                    <input type="checkbox" id="violin" name="violin" value="violin">
+                    <label for="violin">Violin</label><br>
+                    <input type="checkbox" id="flute" name="flute" value="flute">
+                    <label for="flute"> Flute</label><br>
+                    <input type="checkbox" id="tabla" name="tabla" value="tabla">
+                    <label for="tabla">Tabla</label><br>
+
+
+                    <div class="form-group">
+                        <label for="Address">Address</label>
+                        <textarea class="form-control" name="address" id="address" cols="15" rows="5" id="address"
+                            placeholder="Address" minlength="10" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="disciption">Description</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter a short description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input id="submit" type="submit" value="submit" class="btn btn-primary center">
+                        <input id="reset" type="reset" value="reset" class="btn btn-primary center">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
